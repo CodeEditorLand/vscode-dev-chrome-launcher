@@ -1,38 +1,38 @@
 {
-  "manifest_version": 3,
+	"manifest_version": 3,
 
-  "name": "VS Code",
-  "version": "2.6",
-  "description": "Open GitHub and Azure Repos repositories in vscode.dev from the address bar",
-  "action": {
-    "default_icon": "vscode.png"
-  },
+	"name": "VS Code",
+	"version": "2.6",
+	"description": "Open GitHub and Azure Repos repositories in vscode.dev from the address bar",
+	"action": {
+		"default_icon": "vscode.png"
+	},
 
-  "background": {
-    "service_worker": "eventPage.js"
-  },
+	"background": {
+		"service_worker": "eventPage.js"
+	},
 
-  "icons": {
-    "16": "vscode.png",
-    "48": "vscode.png",
-    "128": "vscode.png"
-  },
+	"icons": {
+		"16": "vscode.png",
+		"48": "vscode.png",
+		"128": "vscode.png"
+	},
 
-  "commands": {
-    "launchVSCode": {
-      "suggested_key": {
-        "default": "Ctrl+Period",
-        "mac": "Command+Period"
-      },
-      "description": "Launch vscode.dev"
-    }
-  },
+	"commands": {
+		"launchVSCode": {
+			"suggested_key": {
+				"default": "Ctrl+Period",
+				"mac": "Command+Period"
+			},
+			"description": "Launch vscode.dev"
+		}
+	},
 
-  "options_ui": {
-    "page": "options.html"
-  },
+	"options_ui": {
+		"page": "options.html"
+	},
 
-  "permissions": ["tabs", "history", "storage"],
+	"permissions": ["tabs", "history", "storage"],
 
-  "omnibox": { "keyword": "code" }
+	"omnibox": { "keyword": "code" }
 }
